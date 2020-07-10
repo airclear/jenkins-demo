@@ -7,15 +7,22 @@
 	<packaging>war</packaging>
 	<dependencies>
 	</dependencies>
-	
-	<repositories>
-		<repository>
-			<id>aliyun_rep</id>
-			<name>aliyun_rep</name>
-			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-		</repository>
-	</repositories>
-
+<repositories>
+    <repository>
+        <id>central</id>
+        <name>aliyun maven</name>
+        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        <layout>default</layout>
+        <!-- 是否开启发布版构件下载 -->
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <!-- 是否开启快照版构件下载 -->
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>aliyun</id>
